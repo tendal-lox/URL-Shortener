@@ -32,7 +32,6 @@ npm install
 
 ```sh
 npm install URL-Shortener-with-nodejs-express-and-mongoose
-npm start
 ```
 
  To start the app in dev mode.\
