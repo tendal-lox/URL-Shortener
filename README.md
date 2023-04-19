@@ -23,37 +23,20 @@ This module uses a number of open source projects to work properly:
 ## Installation guide for the user
 
 ```sh
-git clone https://github.com/tendal-lox/Send-verification-code-via-sms.git
-cd sendCode
+git clone https://github.com/tendal-lox/URL-Shortener-with-nodejs-express-and-mongoose.git
+cd URLSHORTENER
 npm install
 ```
 
-## Guide how to use
+## How to use guide
 
 ```sh
-npm install Send-verification-code-via-sms
+npm install URL-Shortener-with-nodejs-express-and-mongoose
 npm start
 ```
 
  To start the app in dev mode.\
-Open [http://localhost:3000/docs/](http://localhost:3000/docs/) to view it in the browser.
-
-## swagger athentication guide
-
-After receiving the token, you must give it to swagger authorize to set that token in requests header.
-
-> Note: SMS sending service is according to the country of Iran. So you have to adjust it according to your country.
-For this, you need to enter /routes/sendVerificationCode.js and change this part of the code:
-
-```javascript
-// Kavenegar send api
-const api = Kavenegar.KavenegarApi({apikey: 'api key from kavenegar'});
-api.Send({ message: generatedCode , sender: "xxx" , receptor: phoneNumber })
-```
-
-## Bugs are being fixed
-
-There is no any problem in the production code, but in the first version of this module, there is a problem in the test. Since there is no database in the test file, when you run npm test you will always encounter a database connection problem.
+Open [http://localhost:3000/](http://localhost:3000/) to view it in the browser.
 
 ## License
 
